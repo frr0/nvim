@@ -18,7 +18,7 @@ call plug#begin(stdpath('data') . 'vimplug')
     Plug 'sirver/ultisnips'
     Plug 'honza/vim-snippets'
     Plug 'neoclide/coc.nvim'
-    Plug 'tzachar/compe-tabnine', { 'do': './install.sh' }
+    " Plug 'tzachar/compe-tabnine', { 'do': './install.sh' }
     Plug 'ackyshake/VimCompletesMe'
 
     Plug 'glepnir/galaxyline.nvim', { 'branch': 'main' }
@@ -58,7 +58,7 @@ call plug#begin(stdpath('data') . 'vimplug')
     Plug 'junegunn/fzf.vim'
     " requires
     Plug 'kyazdani42/nvim-web-devicons' " for file icons
-    " Plug 'kyazdani42/nvim-tree.lua'
+    Plug 'kyazdani42/nvim-tree.lua'
 
 
 
