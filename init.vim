@@ -1,3 +1,17 @@
+lua <<EOF
+require("cosmic")
+require("lsp")
+require("treesitter")
+require("statusbar")
+require("completion")
+require("colors")
+require("compe_words")
+require("completion")
+require("highlights")
+require("icons")
+require("ui")
+EOF
+
 " >> load plugins
 call plug#begin(stdpath('data') . 'vimplug')
     Plug 'nvim-lua/plenary.nvim'
@@ -630,19 +644,6 @@ let g:mkdp_filetypes = ['markdown']
 "     }
 " EOF
 
-lua <<EOF
-require("cosmic")
-require("lsp")
-require("treesitter")
-require("statusbar")
-require("completion")
-require("colors")
-require("compe_words")
-require("completion")
-require("highlights")
-require("icons")
-require("ui")
-EOF
 
 " function! OpenCompletion()
 "     if !pumvisible() && ((v:char >= 'a' && v:char <= 'z') || (v:char >= 'A' && v:char <= 'Z'))
@@ -860,3 +861,4 @@ highlight NvimTreeFolderIcon guibg=blue
 
 
 "==============================================================
+set nolist
