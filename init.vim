@@ -142,6 +142,7 @@ inoremap <silent><expr> <tab>
 " inoremap <esc> <Nop>
 
 nnoremap Y y$
+nnoremap yt 0y$
 " Ctrl-h / l: Move left/right by word in command mode
 cnoremap <c-h> <s-left>
 cnoremap <c-l> <s-right>
