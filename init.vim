@@ -1,5 +1,5 @@
 lua <<EOF
-require("cosmic")
+require("conf")
 require("lsp")
 require("treesitter")
 require("statusbar")
