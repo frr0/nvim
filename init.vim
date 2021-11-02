@@ -5,7 +5,7 @@ require("treesitter")
 require("statusbar")
 require("completion")
 require("colors")
-require("compe_words")
+require("compile")
 require("completion")
 require("highlights")
 require("icons")
@@ -53,6 +53,7 @@ call plug#begin(stdpath('data') . 'vimplug')
     Plug 'tpope/vim-fugitive'
     Plug 'airblade/vim-gitgutter'
     Plug 'vim-test/vim-test'
+    Plug 'mfussenegger/nvim-dap'
 
     Plug 'tomtom/tcomment_vim'
 
@@ -84,7 +85,7 @@ call plug#begin(stdpath('data') . 'vimplug')
 
 call plug#end()
 
-"colorscheme onedark
+colorscheme onedark
 
 " basic settings
 syntax on
@@ -139,6 +140,25 @@ inoremap <silent><expr> <tab>
 " noremap <Right> <Nop>
 "
 " inoremap <esc> <Nop>
+
+nnoremap Y y$
+" Ctrl-h / l: Move left/right by word in command mode
+cnoremap <c-h> <s-left>
+cnoremap <c-l> <s-right>
+" Same for insert mode, including up down
+inoremap <C-h> <left>
+inoremap <C-j> <up>
+" inoremap <M-h> <s-left>
+inoremap <C-l> <right>
+inoremap <C-k> <down>
+" inoremap <M-l> <s-right>
+" Ctrl-j in insert mode: Move cursor down if autocomplete menu is closed
+inoremap <expr> <c-j> pumvisible() ? "\<C-e>\<Down>" : "\<Down>"
+" Ctrl-k in insert mode: Move cursor up if autocomplete menu is closed
+inoremap <expr> <c-k> pumvisible() ? "\<C-e>\<Up>" : "\<Up>"
+
+" Delete current buffer
+nmap <space>bd :bdelete<CR>
 
 nnoremap <tab> :BTags <CR>
 inoremap <silent><tab> <C-n>
@@ -235,10 +255,10 @@ vmap <C-C> "+y
 nnoremap yn :TagbarJumpNext <CR>
 nnoremap yp :TagbarJumpPrev <CR>
 "------------------------------------------------------------
-inoremap <C-h> <esc>hi
-inoremap <C-j> <esc>ji
-inoremap <C-k> <esc>ki
-inoremap <C-l> <esc>li
+" inoremap <C-h> <esc>hi
+" inoremap <C-j> <esc>ji
+" inoremap <C-k> <esc>ki
+" inoremap <C-l> <esc>li
 
 inoremap " ""<left>
 inoremap " ""<left>
@@ -356,12 +376,12 @@ nnoremap <space>cs <cmd>lua require'telescope.builtin'.colorscheme{}<CR>
 " NOTE: You can use other key to expand snippet.
 
 " Expand
-imap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
-smap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+imap <expr> <M-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<M-j>'
+smap <expr> <M-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<M-j>'
 
 " Expand or jump
-imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
-smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+imap <expr> <M-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<M-l>'
+smap <expr> <M-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<M-l>'
 
 " Jump forward or backward
 imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
