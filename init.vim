@@ -6,7 +6,7 @@ require("statusbar")
 --require("completion")
 --require("colors")
 -- require("compile")
-require("completion")
+-- require("completion")
 -- require("highlights")
 -- require("icons")
 --require("ui")
@@ -152,11 +152,15 @@ nnoremap yt 0y$
 cnoremap <c-h> <s-left>
 cnoremap <c-l> <s-right>
 " Same for insert mode, including up down
-inoremap <C-h> <left>
-inoremap <C-j> <up>
+" inoremap <C-h> <left>
+inoremap <M-h> <left>
+" inoremap <C-j> <down>
+inoremap <M-j> <down>
 " inoremap <M-h> <s-left>
-inoremap <C-l> <right>
-inoremap <C-k> <down>
+" inoremap <C-l> <right>
+inoremap <M-l> <right>
+" inoremap <C-k> <up>
+inoremap <M-k> <up>
 " inoremap <M-l> <s-right>
 " Ctrl-j in insert mode: Move cursor down if autocomplete menu is closed
 inoremap <expr> <c-j> pumvisible() ? "\<C-e>\<Down>" : "\<Down>"
@@ -259,7 +263,7 @@ nnoremap <space>o :so% <CR>
 imap <M-b> public class First {<CR>public static void main(String[] args) {<CR>System.out.println("Hello OOP!");<CR>}<CR>}
 "Makefile---------------------------------------------------------------------------------------------"
 noremap <M-m> :e %:h/Makefile<CR>
-imap <M-j> compile:<CR>javac %.java && java %
+" imap <M-j> compile:<CR>javac %.java && java %
 noremap <M-g> :wa <CR> :!javac % && java %< <CR>
 "------------------------------------------------------------
 vmap <C-C> "+y
@@ -390,12 +394,12 @@ nnoremap <space>cs <cmd>lua require'telescope.builtin'.colorscheme{}<CR>
 " NOTE: You can use other key to expand snippet.
 
 " Expand
-imap <expr> <M-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<M-j>'
-smap <expr> <M-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<M-j>'
-
-" Expand or jump
-imap <expr> <M-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<M-l>'
-smap <expr> <M-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<M-l>'
+" imap <expr> <M-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<M-j>'
+" smap <expr> <M-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<M-j>'
+"
+" " Expand or jump
+" imap <expr> <M-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<M-l>'
+" smap <expr> <M-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<M-l>'
 
 " Jump forward or backward
 imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
@@ -1160,3 +1164,4 @@ set nolist
 tnoremap <C-c> <Nop>
 nnoremap <M-c> :! kill -SIGINT
 noremap <silent> <space> :WhichKey '<Space>'<CR>
+inoremap <C-l> <right>
