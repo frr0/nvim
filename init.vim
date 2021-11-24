@@ -39,7 +39,7 @@ call plug#begin(stdpath('data') . 'vimplug')
     source ~/.config/nvim/vim/vimspector.vim                 "debugger
     source ~/.config/nvim/vim/which-key.vim                  "menu keys
     source ~/.config/nvim/vim/nerdcommenter.vim              "comment at once
-    source ~/.config/nvim/vim/rainbow.vim                    "colored bracelets
+    source ~/.config/nvim/vim/rainbow.vim                    "colored brackets
     source ~/.config/nvim/vim/git.vim                        "git stuff
     source ~/.config/nvim/vim/markdown.vim                   "markdown preview
     source ~/.config/nvim/vim/tmux.vim                       "tmux 'panes' navigation
