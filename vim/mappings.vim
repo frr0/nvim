@@ -69,7 +69,7 @@ nnoremap <space>y :Tagbar <CR>
 nnoremap <C-Tab> gt
 " ███████████████████████████████████████████████████████████████████████████████████████████████
 "------------------------------------------------------------
-nnoremap <space>f :Files <CR>
+" nnoremap <space>f :Files <CR>
 nnoremap <space>e :NERDTreeToggle <CR>
 nnoremap <space>j :Lines <CR>
 nnoremap <space>k :BCommits <CR>
