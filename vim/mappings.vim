@@ -105,7 +105,13 @@ nnoremap <space>n :wa <CR> :! make <CR>
 nnoremap <M-v> :! valgrind --leak-check=full --show-leak-kinds=all --log-file=Valgrind.txt ./%< <CR>
 noremap <space>V :! valgrind --leak-check=full --show-leak-kinds=all --log-file=Valgrind.txt ./program <CR>
 " ███████████████████████████████████████████████████████████████████████████████████████████████
-nnoremap <space>r :RangerNewTab <CR>
+nnoremap <space>rr :Telescope <CR>
+nnoremap <space>rc :Telescope BCommits <CR>
+nnoremap <space>rd :Telescope Lsp_definitions <CR>
+nnoremap <space>ra :Telescope code_actions <CR>
+nnoremap <space>rm :Telescope man_pages <CR>
+nnoremap <space>rn :Telescope marks <CR>
+" ███████████████████████████████████████████████████████████████████████████████████████████████
 nnoremap <leader>n :noh <CR>
 nnoremap <space>ò :noh <CR>
 nnoremap <leader>s :set spell <CR>
@@ -242,7 +248,7 @@ cnoremap <c-l> <s-right>
 
 
 " Delete current buffer
-nmap <space>bd :bdelete<CR>
+" nmap <space>bd :bdelete<CR>
 
 nnoremap <S-\> :BTags <CR>
 inoremap <silent><tab> <C-n>
