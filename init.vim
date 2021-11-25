@@ -14,17 +14,6 @@ let g:startify_custom_header = [ "",
 	\ ]
 
 " ████████████████████████████████████████████████████████████████████████████████████████████
-" ██ Lua                                                                                    ██
-" ████████████████████████████████████████████████████████████████████████████████████████████
-
-lua <<EOF
-  require("cosmic")
-  require("lsp")
-  require("treesitter")
-  require("statusbar")
-EOF
-
-" ████████████████████████████████████████████████████████████████████████████████████████████
 " ██ Plugins                                                                                ██
 " ████████████████████████████████████████████████████████████████████████████████████████████
 
@@ -45,9 +34,19 @@ call plug#begin(stdpath('data') . 'vimplug')
   source ~/.config/nvim/vim/tmux.vim                       "tmux 'panes' navigation
   source ~/.config/nvim/vim/lsp.vim                        "lsp
   source ~/.config/nvim/vim/java.vim                       "java
+  source ~/.config/nvim/vim/line.vim                       "java
   " source ~/.config/nvim/vim/yankring.vim                 "yank memory
 
 call plug#end()
+
+" ████████████████████████████████████████████████████████████████████████████████████████████
+" ██ Lua                                                                                    ██
+" ████████████████████████████████████████████████████████████████████████████████████████████
+
+lua <<EOF
+  require("lsp")
+  require("statusbar")
+EOF
 
 " ████████████████████████████████████████████████████████████████████████████████████████████
 " ██ basic settings                                                                         ██

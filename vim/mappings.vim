@@ -287,8 +287,8 @@ highlight iCursor guifg=white guibg=steelblue
 set cursorline
 tnoremap <Esc> <C-\><C-n>:q!<CR>
 tnoremap <Esc> <C-\><C-n>
-tnoremap <C-c> <C-\><C-n>:q!<CR>
-tnoremap <C-c> <C-\><C-n>
+" tnoremap <C-c> <C-\><C-n>:q!<CR>
+" tnoremap <C-c> <C-\><C-n>
 
 " set leader key to ,
 let g:mapleader=","

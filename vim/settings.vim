@@ -24,3 +24,15 @@ set omnifunc=syntaxcomplete#Complete
 autocmd FileType vim let b:vcm_tab_complete = 'vim'
 autocmd FileType markdown,txt setlocal complete+=k/usr/share/dict/words
 colorscheme onedark
+set  t_Co=256
+" set term=screen-256color
+set background=dark
+" highlight Normal guibg=dark guifg=white
+hi Normal ctermbg=16 guibg=#292C32
+hi LineNr ctermbg=16 guibg=#292C32
+
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
