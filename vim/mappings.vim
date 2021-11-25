@@ -15,6 +15,10 @@ noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 " Make Y behave like the other capitals
 nnoremap Y y$
 
+nnoremap yy "+yy
+
+vnoremap y "+y
+
 " Keep it centered
 nnoremap n nzzzv
 nnoremap N Nzzzv

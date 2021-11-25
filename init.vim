@@ -35,7 +35,7 @@ call plug#begin(stdpath('data') . 'vimplug')
   source ~/.config/nvim/vim/lsp.vim                        "lsp
   source ~/.config/nvim/vim/java.vim                       "java
   source ~/.config/nvim/vim/line.vim                       "java
-  " source ~/.config/nvim/vim/yankring.vim                 "yank memory
+  source ~/.config/nvim/vim/yankring.vim                   "yank memory
 
 call plug#end()
 
