@@ -1,3 +1,9 @@
+Plug 'kabouzeid/nvim-lspinstall'
+Plug 'nvim-lua/completion-nvim'
+Plug 'neovim/nvim-lspconfig'
+Plug 'glepnir/lspsaga.nvim'
+Plug 'hrsh7th/nvim-compe'
+
 " >> Lsp key
 " bindings_____________________________________________________________________________________
 nnoremap <silent> gd    <cmd>lua vim.lsp.buf.definition()<CR>

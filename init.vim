@@ -44,6 +44,7 @@ call plug#begin(stdpath('data') . 'vimplug')
   source ~/.config/nvim/vim/markdown.vim                   "markdown preview
   source ~/.config/nvim/vim/tmux.vim                       "tmux 'panes' navigation
   source ~/.config/nvim/vim/lsp.vim                        "lsp
+  source ~/.config/nvim/vim/java.vim                       "java
   " source ~/.config/nvim/vim/yankring.vim                 "yank memory
 
 call plug#end()

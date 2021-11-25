@@ -1,4 +1,5 @@
 Plug 'puremourning/vimspector'                                               "debugger
+" Plug 'mfussenegger/nvim-dap'
 
 "Vimspector
 let g:vimspector_enable_mappings = 'HUMAN'

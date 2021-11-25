@@ -1,4 +1,11 @@
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'ThePrimeagen/harpoon'
+Plug 'ThePrimeagen/vim-be-good'
 Plug 'nvim-telescope/telescope.nvim'                                         "file founder
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
+" Plug 'preservim/tagbar'
 
 " >> Telescope bindings
 nnoremap <space>pp <cmd>lua require'telescope.builtin'.builtin{}<CR>
