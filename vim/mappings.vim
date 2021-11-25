@@ -70,7 +70,7 @@ nnoremap <C-Tab> gt
 " ███████████████████████████████████████████████████████████████████████████████████████████████
 "------------------------------------------------------------
 " nnoremap <space>f :Files <CR>
-nnoremap <space>e :NERDTreeToggle <CR>
+" nnoremap <space>e :NERDTreeToggle <CR>
 nnoremap <space>j :Lines <CR>
 nnoremap <space>k :BCommits <CR>
 nnoremap <space>b :tabe <CR>
