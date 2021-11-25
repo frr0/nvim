@@ -1,8 +1,8 @@
-Plug 'vim-test/vim-test'
-Plug 'vim-scripts/java_getset.vim'
-Plug 'vim-scripts/Vim-JDE'
-Plug 'artur-shaik/vim-javacomplete2'
-Plug 'mfussenegger/nvim-jdtls'
+" Plug 'vim-test/vim-test'
+" Plug 'vim-scripts/java_getset.vim'
+" Plug 'vim-scripts/Vim-JDE'
+" Plug 'artur-shaik/vim-javacomplete2'
+" Plug 'mfussenegger/nvim-jdtls'
 
 "=============================================================================
 " java.vim --- SpaceVim lang#java layer
