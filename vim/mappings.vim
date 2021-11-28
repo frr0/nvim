@@ -59,10 +59,10 @@ nnoremap <space>\ :Startify <CR>
 " ███████████████████████████████████████████████████████████████████████████████████████████████
 "------------------------------------------------------------
 nnoremap <space>1 :w <CR> :!gcc -g % -o %< && ./%< <CR>
-nnoremap <space>C :w <CR> :tabe term://gcc -g % -o %< && ./%< <CR>
+nnoremap <space>C :w <CR> FloatermNew --height=0.95 --width=0.95 --autoclose=0 gcc -g % -o %< && ./%< <CR>
 nnoremap <space>P :wa <CR> :!python3 % <CR>
 nnoremap <space>J :wa <CR> :!javac -g % && java %< <CR>
-nnoremap <space>2 :wa <CR> :tabe term://javac -g % && java %< <CR>
+nnoremap <space>2 :wa <CR> FloatermNew --height=0.95 --width=0.95 --autoclose=0 javac -g % && java %< <CR>
 map! <F4> :!./%<
 map <F7> :w  <CR> :packadd termdebug <CR>
 autocmd filetype c nnoremap <F6> :Termdebug %:r<CR><c-w>2j<c-w>L
@@ -125,7 +125,7 @@ nnoremap <leader>s :set spell <CR>
 nnoremap <space>S :mksession! .session.vim <CR>
 nnoremap <space>O :so .session.vim <CR>
 nnoremap <space>o :so% <CR>
-nnoremap <space>7 :tabe term://./% <CR>
+nnoremap <space>7 :wa <CR> :FloatermNew --height=0.95 --width=0.95 --autoclose=0 ./% <CR>
 
 " ███████████████████████████████████████████████████████████████████████████████████████████████
 " ██ Maps Insert                                                                               ██
