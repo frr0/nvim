@@ -5,6 +5,7 @@ set relativenumber
 set ignorecase      " ignore case
 set smartcase     " but don't ignore it, when search string contains uppercase letters
 set incsearch        " do incremental searching
+set hidden
 set visualbell
 set expandtab
 set tabstop=2

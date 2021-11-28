@@ -2,11 +2,14 @@
 " ██ Maps Normal                                                                               ██
 " ███████████████████████████████████████████████████████████████████████████████████████████████
 
+" set leader key to ,
+let g:mapleader=","
+
 nnoremap <Tab> gt
 nnoremap <S-Tab> gT
 nnoremap <C-Tab> bNext
 
-" ███████████████████████████████████████████████████████████████████████████████████████████████
+nnoremap ì ^
 
 " When text is wrapped, move by terminal rows, not lines, unless a count is provided
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
@@ -70,7 +73,7 @@ nnoremap <leader>. :bn <CR>
 nnoremap <nowait><space>X :bd <CR>
 " nnoremap <tab>  :BTags <CR>
 nnoremap <space>y :Tagbar <CR>
-nnoremap <C-Tab> gt
+" nnoremap <C-Tab> gt
 " ███████████████████████████████████████████████████████████████████████████████████████████████
 "------------------------------------------------------------
 " nnoremap <space>f :Files <CR>
@@ -130,15 +133,15 @@ nnoremap <space>7 :tabe term://./% <CR>
 
 inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+" inoremap <silent><expr> <c-j> pumvisible() ? "\<C-n>" : "\<TAB>"
+" inoremap <expr><c-k-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 "key
-inoremap <silent><expr> <tab>
+inoremap <silent><expr> <cr>
       \ pumvisible() ? coc#_select_confirm() :
       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
       \ <SID>check_back_space() ? "\<tab>" :
       \ coc#refresh()
-
-" ███████████████████████████████████████████████████████████████████████████████████████████████
 
 " inoremap <esc> <Nop>
 
@@ -254,8 +257,8 @@ cnoremap <c-l> <s-right>
 " Delete current buffer
 " nmap <space>bd :bdelete<CR>
 
-nnoremap <S-\> :BTags <CR>
-inoremap <silent><tab> <C-n>
+" nnoremap <S-\> :BTags <CR>
+" inoremap <silent><tab> <C-n>
 nnoremap <space>x :wa<cr>
 nnoremap <space>z :xa<cr>
 nnoremap ,z :xa<cr>
@@ -263,7 +266,7 @@ nnoremap <space>q :wq<cr>
 nnoremap <nowait><space>s :wa<cr>
 nnoremap <space>0 :q!<cr>
 imap <nowait><space> <space>
-imap <tab> <C-n>
+" imap <tab> <C-n>
 nnoremap - ,
 " nnoremap \ _
 nnoremap <nowait>\ 0
@@ -300,8 +303,6 @@ tnoremap <Esc> <C-\><C-n>
 " tnoremap <C-c> <C-\><C-n>:q!<CR>
 " tnoremap <C-c> <C-\><C-n>
 
-" set leader key to ,
-let g:mapleader=","
 
 " ███████████████████████████████████████████████████████████████████████████████████████████████
 
@@ -309,5 +310,9 @@ set nolist
 tnoremap <C-c> <Nop>
 nnoremap <M-c> :! kill -SIGINT
 noremap <silent> <space> :WhichKey '<Space>'<CR>
-inoremap <C-l> <right>
+" inoremap <C-l> <right>
 let g:scrollLock = 0
+
+" ███████████████████████████████████████████████████████████████████████████████████████████████
+" ██ Maps Others                                                                               ██
+" ███████████████████████████████████████████████████████████████████████████████████████████████

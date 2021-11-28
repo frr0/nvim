@@ -47,7 +47,7 @@ inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-j>" :
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-k>" : "\<C-h>"
+inoremap <expr><c-j> pumvisible() ? "\<C-k>" : "\<C-h>"
 
 " function! s:check_back_space() abort
 "   let col = col('.') - 1
@@ -63,7 +63,7 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-k>" : "\<C-h>"
 "
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+inoremap <silent><expr> <tab> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
