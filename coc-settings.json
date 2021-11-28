@@ -5,7 +5,7 @@
   "diagnostic.checkCurrentLine": true,
   "diagnostic.virtualText": true,
   //"diagnostic.enableMessage": "jump",
-  "diagnostic.errorSign": "ᰞ",
+  "diagnostic.errorSign": "⟁",
   //"diagnostic.errorSign": "⛔️",
   "diagnostic.warningSign": "",
   //"diagnostic.warningSign": "⚠️",
