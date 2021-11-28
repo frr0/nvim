@@ -234,11 +234,14 @@ function! Term_toggle(height)
 endfunction
 
 
-nnoremap <space>tt :call Term_toggle(10)<cr>
-tnoremap <leader>tt <C-\><C-n>:call Term_toggle(10)<cr>
+" nnoremap <space>tt :call Term_toggle(10)<cr>
+" tnoremap <leader>tt <C-\><C-n>:call Term_toggle(10)<cr>
+nnoremap <space>t :FloatermNew --height=0.95 --width=0.95 <cr>
 
-noremap <space>m  :wa <CR> <C-\><C-n>:tabe term://make<CR>
-nnoremap <silent> <space>gg :wa <CR> :LazyGit<CR>
+" noremap <space>m  :wa <CR> <C-\><C-n>:tabe term://make<CR>
+noremap <space>m  :wa <CR> :FloatermNew --height=0.95 --width=0.95 --autoclose=0 make <cr>
+" nnoremap <silent> <space>gg :wa <CR> :LazyGit<CR>
+nnoremap <silent> <space>gg :wa <CR> : FloatermNew --height=0.95 --width=0.95 --autoclose=0 lazygit <CR>
 noremap <silent> <space> :WhichKey '<Space>'<CR>
 noremap <silent> <leader> :WhichKey ','<CR>
 nnoremap <silent> <space>g :WhichKey 'g'<CR>
