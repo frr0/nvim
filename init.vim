@@ -22,7 +22,7 @@ call plug#begin(stdpath('data') . 'vimplug')
   source ~/.config/nvim/vim/telescope.vim                  "file founder
   source ~/.config/nvim/vim/treesitter.vim                 "highlight, indent
   source ~/.config/nvim/vim/snippets.vim                   "code snippets
-  source ~/.config/nvim/vim/coc.vim                        "autocomplete, syntax errors
+  source ~/.config/nvim/vim/coc.vim                        "~/.config/nvim/coc-settings.json
   source ~/.config/nvim/vim/startify.vim                   "start page
   source ~/.config/nvim/vim/vimtex.vim                     "latex
   source ~/.config/nvim/vim/vimspector.vim                 "debugger
@@ -45,8 +45,8 @@ call plug#end()
 " ████████████████████████████████████████████████████████████████████████████████████████████
 
 lua <<EOF
-  require("lsp")
-  require("statusbar")
+  require("lsp")                                           -- ~/.config/nvim/lua/lsp.lua
+  require("statusbar")                                     -- ~/.config/nvim/lua/statusbar.lua
 EOF
 
 " ████████████████████████████████████████████████████████████████████████████████████████████
