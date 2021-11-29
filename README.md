@@ -1,6 +1,8 @@
 # nvim
 nvim
 
+![image](Nvim.png)
+
 ## [VIM-PLUG](https://github.com/junegunn/vim-plug)
 
 neovim
