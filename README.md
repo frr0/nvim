@@ -1,7 +1,7 @@
 # nvim
 nvim
 
-[TOC]
+[toc]
 
 ## [VIM-PLUG](https://github.com/junegunn/vim-plug)
 
