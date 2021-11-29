@@ -1,9 +1,9 @@
 # nvim
 nvim
 
-[toc]
+[TOC]
 
-## [VIM-PLUG] (https://github.com/junegunn/vim-plug)
+## [VIM-PLUG](https://github.com/junegunn/vim-plug)
 
 neovim
 
@@ -20,31 +20,29 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ```
 -------------------------------------------
 
-## [COC-VIM] (https://github.com/neoclide/coc.nvim)
+## [COC-VIM](https://github.com/neoclide/coc.nvim)
 
 ```
 :CocInstall coc-json coc-tsserver coc-clangd coc-python coc-java
 
 ```
 
-### [Coc-snippets] (https://github.com/neoclide/coc-snippets)
+### [Coc-snippets](https://github.com/neoclide/coc-snippets)
 
 ```
 :CocInstall coc-snippets
 ```
 
-### [Util-snippets] (https://github.com/sirver/UltiSnips)
+### [Util-snippets](https://github.com/sirver/UltiSnips)
 
 ```
 :CocInstall coc-clangd 
 :CocInstall coc-python
 :CocInstall coc-java
 ```
-### COC Extensions
+### [COC Extensions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
 
-[other repository](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
-
-[other repository](https://github.com/neoclide/coc-sources)
+### [COC sources](https://github.com/neoclide/coc-sources)
 
 --------------------------------------------------------------------------------------------------------
 
@@ -58,7 +56,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 --------------------------------------------------------------------------------------------------------
 
-## [Dev-Icons] (https://github.com/ryanoasis/vim-devicons)
+## [Dev-Icons](https://github.com/ryanoasis/vim-devicons)
 
 [Nerd fonts](https://github.com/ryanoasis/nerd-fonts#font-installation)
 
