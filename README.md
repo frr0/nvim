@@ -35,11 +35,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 ### [Util-snippets](https://github.com/sirver/UltiSnips)
 
-```
-:CocInstall coc-clangd 
-:CocInstall coc-python
-:CocInstall coc-java
-```
 ### [COC Extensions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
 
 ### [COC sources](https://github.com/neoclide/coc-sources)
