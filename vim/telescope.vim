@@ -6,6 +6,7 @@ Plug 'nvim-telescope/telescope.nvim'                                         "fi
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'junegunn/fzf.vim'
 Plug 'preservim/tagbar'
+Plug 'gaborvecsei/memento.nvim'
 
 " >> Telescope bindings
 nnoremap <space>pp <cmd>lua require'telescope.builtin'.builtin{}<CR>
@@ -46,3 +47,5 @@ nnoremap <space>cs <cmd>lua require'telescope.builtin'.colorscheme{}<CR>
 " nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 " nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
  " let g:compe.source.tabnine = v:true
+ "
+ nnoremap <space>, <cmd>lua require('memento').toggle()<CR>
