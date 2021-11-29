@@ -1,5 +1,4 @@
 # nvim
-nvim
 
 ![image](Nvim.png)
 
@@ -24,7 +23,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 ```
 :CocInstall coc-json coc-tsserver coc-clangd coc-python coc-java
-
 ```
 
 ### [Coc-snippets](https://github.com/neoclide/coc-snippets)
