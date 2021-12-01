@@ -2,7 +2,7 @@
 
 ![image](Nvim.png)
 
-## Script to install it
+## Installation
 
 > Use it at your own risk, I've never tested it
 
@@ -10,7 +10,9 @@
 wget https://raw.githubusercontent.com/frr0/nvim/master/install.sh && ./install.sh
 ```
 
-## [VIM-PLUG](https://github.com/junegunn/vim-plug)
+## Configuration
+
+### [VIM-PLUG](https://github.com/junegunn/vim-plug)
 
 neovim
 
@@ -27,27 +29,27 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ```
 -------------------------------------------
 
-## [COC-VIM](https://github.com/neoclide/coc.nvim)
+### [COC-VIM](https://github.com/neoclide/coc.nvim)
 
 ```
 :CocInstall coc-json coc-tsserver coc-clangd coc-python coc-java
 ```
 
-### [Coc-snippets](https://github.com/neoclide/coc-snippets)
+#### [Coc-snippets](https://github.com/neoclide/coc-snippets)
 
 ```
 :CocInstall coc-snippets
 ```
 
-### [Util-snippets](https://github.com/sirver/UltiSnips)
+#### [Util-snippets](https://github.com/sirver/UltiSnips)
 
-### [COC Extensions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
+#### [COC Extensions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
 
-### [COC sources](https://github.com/neoclide/coc-sources)
+#### [COC sources](https://github.com/neoclide/coc-sources)
 
 --------------------------------------------------------------------------------------------------------
 
-## [Vimspector](https://github.com/puremourning/vimspector#supported-languages)
+### [Vimspector](https://github.com/puremourning/vimspector#supported-languages)
 
 ```
 :VimspectorInstall vscode-cpptools 
@@ -57,7 +59,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 --------------------------------------------------------------------------------------------------------
 
-## [Dev-Icons](https://github.com/ryanoasis/vim-devicons)
+### [Dev-Icons](https://github.com/ryanoasis/vim-devicons)
 
 [Nerd fonts](https://github.com/ryanoasis/nerd-fonts#font-installation)
 
