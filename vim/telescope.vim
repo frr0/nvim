@@ -3,6 +3,7 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'ThePrimeagen/harpoon'
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'nvim-telescope/telescope.nvim'                                         "file founder
+Plug 'nvim-telescope/telescope-rg.nvim'
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'junegunn/fzf.vim'
 Plug 'preservim/tagbar'
