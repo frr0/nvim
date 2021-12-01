@@ -2,6 +2,14 @@
 
 ![image](Nvim.png)
 
+## Script to install it
+
+> Use it at your own risk, I've never tested it
+
+```
+wget https://raw.githubusercontent.com/frr0/nvim/master/install.sh && ./install.sh
+```
+
 ## [VIM-PLUG](https://github.com/junegunn/vim-plug)
 
 neovim
