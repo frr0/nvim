@@ -1,10 +1,6 @@
 #!/bin/sh
 
-# I've just learnt few things about shell scripts
-# recently at school, so this file is probably
-# full of errors and it's not even been tested
-
-# I made it for linux, I'm not aware of others OSs
+# Nvim has to be at least version 0.5
 
 echo "Before starting, I don't suggest to use this script"
 echo "Are you really sure you want to continue? [y/n]"
@@ -48,6 +44,11 @@ if [ "$answer2" == "y" ]; then
 else
   git clone https://github.com/frr0/nvim.git
 fi
+
+cd ~/.vim/plugged/coc.nvim
+yarn install
+
+cd ~
 
 nvim +PlugInstall +qall
 

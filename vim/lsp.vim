@@ -8,7 +8,7 @@ Plug 'hrsh7th/nvim-compe'
 " lua require'lspconfig'.pyls.setup{on_attach=require'completion'.on_attach}
 " EOF
 
-" Use completion-nvim in every buffer
+Use completion-nvim in every buffer
 autocmd BufEnter * lua require'completion'.on_attach()
 
 " Use <Tab> and <S-Tab> to navigate through popup menu
@@ -22,7 +22,7 @@ set completeopt=menuone,noinsert,noselect
 set shortmess+=c
 
 " possible value: 'UltiSnips', 'Neosnippet', 'vim-vsnip', 'snippets.nvim'
-let g:completion_enable_snippet = 'UltiSnips' 
+let g:completion_enable_snippet = 'UltiSnips'
 let g:completion_enable_snippet = 'vim-vsnip'
 " let g:completion_enable_snippet = 'snippets.nvim'
 
@@ -97,4 +97,17 @@ for _, lsp in ipairs(servers) do
     }
   }
 end
+
+require'lspconfig'.clangd.setup{}
 EOF
+
+" " Use completion-nvim in every buffer
+" autocmd BufEnter * lua require'completion'.on_attach()
+"
+"
+" lua require'lspconfig'.clangd.setup{on_attach=require'completion'.on_attach}
+" lua require'lspconfig'.diagnosticls.setup{on_attach=require'completion'.on_attach}
+" lua require'lspconfig'.vimls.setup{on_attach=require'completion'.on_attach}
+
+
+
