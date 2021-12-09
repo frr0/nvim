@@ -25,6 +25,8 @@ set omnifunc=syntaxcomplete#Complete
 autocmd FileType vim let b:vcm_tab_complete = 'vim'
 autocmd FileType markdown,txt setlocal complete+=k/usr/share/dict/words
 colorscheme onedark
+" colorscheme catppuccin
+" colorscheme dracula
 set  t_Co=256
 " set term=screen-256color
 set background=dark
@@ -37,3 +39,8 @@ if exists('+termguicolors')
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
+
+" Folds auto
+
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview

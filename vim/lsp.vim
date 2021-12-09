@@ -8,7 +8,7 @@ Plug 'hrsh7th/nvim-compe'
 " lua require'lspconfig'.pyls.setup{on_attach=require'completion'.on_attach}
 " EOF
 
-Use completion-nvim in every buffer
+" Use completion-nvim in every buffer
 autocmd BufEnter * lua require'completion'.on_attach()
 
 " Use <Tab> and <S-Tab> to navigate through popup menu

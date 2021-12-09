@@ -109,3 +109,9 @@ let g:mkdp_page_title = '「${name}」'
 " recognized filetypes
 " these filetypes will have MarkdownPreview... commands
 let g:mkdp_filetypes = ['markdown']
+
+" nnoremap <space>ì  : Flobuildnote.sh % <CR>
+
+nnoremap <space>ì :w <CR> FloatermNew --height=0.95 --width=0.95 --autoclose=0 buildnote.sh % <CR>
+
+" autocmd BufWritePost
