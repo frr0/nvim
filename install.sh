@@ -30,7 +30,7 @@ cd ~
 cd .config
 
 if [ -d nvim ]; then
-  if [ -f nvim_OLD ]; then
+  if [ -d nvim_OLD ]; then
     rename nvim nvim_o0Oo0Oo0OLD
   fi
   rename nvim nvim_OLD
