@@ -12,7 +12,7 @@ wget https://raw.githubusercontent.com/frr0/nvim/master/install.sh && chmod +x i
 
 ## Configuration
 
-> Note! this part could be partially useless since the installation script does the jobs for you, just take a look to Coc and Vimspector if you neet to
+> Note! this part could be partially useless since the installation script does the jobs for you, just take a look to Coc and Vimspector if you need to
 
 ### [VIM-PLUG](https://github.com/junegunn/vim-plug)
 
