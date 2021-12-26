@@ -67,7 +67,8 @@ nnoremap <space>e :Vexplore
 
 " makefile
 
-nnoremap <space>m :!make <cr>
+nnoremap <space>m :make <cr>
+
 nnoremap <space>w :vsp <cr>
 nnoremap <space>i :split <cr>
 
