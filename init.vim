@@ -2,6 +2,47 @@
 " Neovim "
 "========"
 
+call plug#begin(stdpath('data') . 'vimplug')
+
+  source ~/.config/nvim/vim/telescope.vim                  "file founder
+  source ~/.config/nvim/vim/treesitter.vim                 "highlight, indent
+  source ~/.config/nvim/vim/snippets.vim                   "code snippets
+  source ~/.config/nvim/vim/coc.vim                        "~/.config/nvim/coc-settings.json
+  source ~/.config/nvim/vim/startify.vim                   "start page
+  source ~/.config/nvim/vim/vimtex.vim                     "latex
+  source ~/.config/nvim/vim/vimspector.vim                 "debugger
+  source ~/.config/nvim/vim/which-key.vim                  "menu keys
+  source ~/.config/nvim/vim/nerdcommenter.vim              "comment at once
+  source ~/.config/nvim/vim/rainbow.vim                    "colored brackets
+  source ~/.config/nvim/vim/git.vim                        "git stuff
+  source ~/.config/nvim/vim/markdown.vim                   "markdown preview
+  source ~/.config/nvim/vim/tmux.vim                       "tmux 'panes' navigation
+  source ~/.config/nvim/vim/lsp.vim                        "lsp
+  source ~/.config/nvim/vim/java.vim                       "java
+  source ~/.config/nvim/vim/line.vim                       "java
+  source ~/.config/nvim/vim/tree.vim                       "java
+  source ~/.config/nvim/vim/yankring.vim                   "yank memory
+
+call plug#end()
+
+lua <<EOF
+require "user.plugins"
+require "user.cmp"
+require "user.lsp"
+require "user.telescope"
+require "user.treesitter"
+require "user.gitsigns"
+require "user.nvim-tree"
+require "user.bufferline"
+require "user.lualine"
+require "user.toggleterm"
+require "user.project"
+require "user.impatient"
+require "user.indentline"
+require "user.alpha"
+require "user.whichkey"
+require "user.autocommands"
+EOF
 
 
 " stettings
@@ -24,7 +65,7 @@ set autoindent
 set cursorline
 
 colorscheme onedark
-set  t_Co=25
+set t_Co=256
 set background=dark
 
 hi Normal ctermbg=16 guibg=#292C32
