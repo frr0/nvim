@@ -80,24 +80,24 @@ local opts = {
 
 local mappings = {
   ["a"] = { "<cmd>Startify<cr>", "Startify" },
-  [";"] = {
+  [","] = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
   },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["s"] = { "<cmd>w!<CR>", "Save" },
+  ["b"] = { "<cmd>tabe<CR>", "New Tab" },
+  ["v"] = { "<cmd>bnext<CR>", "Next buffer" },
   ["q"] = { "<cmd>q!<CR>", "Quit" },
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["ò"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   ["f"] = {
-    "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-    "Find files",
+    "<cmd>lua require('telescope.builtin').git_files(require('telescope.themes'))<cr>",
+    "Git files",
   },
-  ["h"] = {
-    "<cmd>lua require('telescope.builtin').git_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-    "git files",
-  },
-  ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
+  ["h"] = {"<cmd>Telescope file_browser<cr>", "Files" },
+  ["k"] = {"<cmd>Telescope git_commits<cr>", "Commmits" },
+  ["j"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
 
   p = {
