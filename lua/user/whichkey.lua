@@ -85,7 +85,7 @@ local mappings = {
     "Buffers",
   },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-  ["m"] = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 make <cr>", "Makefile" },
+  ["m"] = { "<cmd>wa | FloatermNew --height=0.95 --width=0.95 --autoclose=0 make <cr>", "Makefile" },
   ["s"] = { "<cmd>w!<CR>", "Save" },
   ["b"] = { "<cmd>tabe<CR>", "New Tab" },
   ["v"] = { "<cmd>bnext<CR>", "Next buffer" },
@@ -103,10 +103,10 @@ local mappings = {
 
   c = {
     name = "Compile",
-    c = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 gcc -g % -o %< && ./%< <cr>", "C" },
-    j = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 javac -g % && java %< <CR>", "Java"},
-    p = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 python3 % <cr>", "Python" },
-    s = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 ./% <cr>", "Shell" },
+    c = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 wa | gcc -g % -o %< && ./%< <cr>", "C" },
+    j = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 wa | javac -g % && java %< <CR>", "Java"},
+    p = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 wa | python3 % <cr>", "Python" },
+    s = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 wa | ./% <cr>", "Shell" },
   },
 
   p = {
