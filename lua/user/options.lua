@@ -1,6 +1,6 @@
 local options = {
   number = true,                           -- set numbered lines
-  relativenumber = false,                  -- set relative numbered lines
+  relativenumber = true,                  -- set relative numbered lines
   mouse = "a",                             -- allow the mouse to be used in neovim
   hidden = true,                           --
   expandtab = true,                        -- convert tabs to spaces
@@ -16,7 +16,7 @@ for k, v in pairs(options) do
   vim.opt[k] = v
 end
 
-vim.cmd "colorscheme onedark"
+--vim.cmd "colorscheme onedark"
 --vim.cmd "cset t_Co=256"
 --vim.cmd "cset background=dark"
 vim.cmd "hi Normal ctermbg=16 guibg=#292C32"

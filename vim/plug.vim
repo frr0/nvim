@@ -2,6 +2,7 @@
 " Line
 " ==============================================================
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+Plug 'nvim-lualine/lualine.nvim'
 " If you want to display icons, then use one of these plugins:
 Plug 'kyazdani42/nvim-web-devicons' " lua
 " ==============================================================
@@ -73,4 +74,14 @@ Plug 'vim-scripts/YankRing.vim'
 " Whichkey
 " ===============================================================
 Plug 'liuchengxu/vim-which-key'
+" ===============================================================
+
+
+" ===============================================================
+" Colorscheme
+" ===============================================================
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'marko-cerovac/material.nvim'
+Plug 'joshdick/onedark.vim'
+set t_Co=256
 " ===============================================================

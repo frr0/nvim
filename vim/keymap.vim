@@ -54,6 +54,19 @@ inoremap { {}<left>
 vnoremap < <gv
 vnoremap > >gv
 
+" tree
+
+nnoremap <space>e :NvimTreeToggle <cr>
+
+" Telescope
+
+nnoremap <space>f :Telescope git_files <cr>
+nnoremap <space>h :Telescope file_browser <cr>
+nnoremap <space>f :Telescope git_files <cr>
+nnoremap <space>f :Telescope git_files <cr>
+nnoremap <space>r :Telescope <cr>
+
+
 " Terminal
 
 let g:term_buf = 0
