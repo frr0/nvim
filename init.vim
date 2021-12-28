@@ -32,3 +32,5 @@ require "user.indentline"
 --require "user.comment"
 --require "user.keymaps"
 EOF
+
+colorscheme onedark
