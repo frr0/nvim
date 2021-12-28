@@ -23,8 +23,8 @@ set backspace=indent,eol,start "allow backspacing over everything in insert mode
 set autoindent
 set cursorline
 
-colorscheme onedark
-set  t_Co=25
+colorscheme darkplus
+set t_Co=256
 set background=dark
 
 hi Normal ctermbg=16 guibg=#292C32
@@ -63,7 +63,7 @@ vmap 1 0
 nnoremap 0 $
 vmap 0 $
 
-nnoremap <space>e :Vexplore
+nnoremap <space>e :Vexplore <cr>
 
 " makefile
 
