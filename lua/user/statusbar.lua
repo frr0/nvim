@@ -106,12 +106,12 @@ gls.left[6] = {
 }
 
 gls.right[1] = {
-    DiagnosticError = {provider = "DiagnosticError", icon = "  ⟁ ", highlight = {colors.error_red, colors.bg}}
-    -- DiagnosticError = {provider = "DiagnosticError", icon = "  ⛔️ ", highlight = {colors.error_red, colors.bg}}
+    DiagnosticError = {provider = "DiagnosticError", icon = "   ", highlight = {colors.error_red, colors.bg}}
+    -- DiagnosticError = {provider = "DiagnosticError", icon = "  ⟁⛔️ ", highlight = {colors.error_red, colors.bg}}
 }
-gls.right[2] = {DiagnosticWarn = {provider = "DiagnosticWarn", icon = "   ", highlight = {colors.orange, colors.bg}}}
+gls.right[2] = {DiagnosticWarn = {provider = "DiagnosticWarn", icon = "   ", highlight = {colors.orange, colors.bg}}}
  -- //⃠ ⊗ ⊘ ⌦ ⍁ ▓ ◑ ▶ ⛒ ⚫ ⚉  ❌ ⛔ ⟁  ⨂ ⬤  ⬣  ⬛
--- gls.right[2] = {DiagnosticWarn = {provider = "DiagnosticWarn", icon = "  ⚠️  ", highlight = {colors.orange, colors.bg}}}
+-- gls.right[2] = {DiagnosticWarn = {provider = "DiagnosticWarn", icon = "  ⚠️  ", highlight = {colors.orange, colors.bg}}}
 
 gls.right[3] = {
     DiagnosticHint = {provider = "DiagnosticHint", icon = "   ", highlight = {colors.vivid_blue, colors.bg}}
