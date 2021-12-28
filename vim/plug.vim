@@ -74,6 +74,7 @@ Plug 'vim-scripts/YankRing.vim'
 " Whichkey
 " ===============================================================
 Plug 'liuchengxu/vim-which-key'
+Plug 'mhinz/vim-startify'
 " ===============================================================
 
 
