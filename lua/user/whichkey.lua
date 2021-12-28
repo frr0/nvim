@@ -85,11 +85,12 @@ local mappings = {
     "Buffers",
   },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
+  ["m"] = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 make <cr>", "Makefile" },
   ["s"] = { "<cmd>w!<CR>", "Save" },
   ["b"] = { "<cmd>tabe<CR>", "New Tab" },
   ["v"] = { "<cmd>bnext<CR>", "Next buffer" },
   ["q"] = { "<cmd>q!<CR>", "Quit" },
-  ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
+  ["x"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["ò"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   ["f"] = {
     "<cmd>lua require('telescope.builtin').git_files(require('telescope.themes'))<cr>",
@@ -99,6 +100,14 @@ local mappings = {
   ["k"] = {"<cmd>Telescope git_commits<cr>", "Commmits" },
   ["j"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
+
+  c = {
+    name = "Compile",
+    c = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 gcc -g % -o %< && ./%< <cr>", "C" },
+    j = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 javac -g % && java %< <CR>", "Java"},
+    p = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 python3 % <cr>", "Python" },
+    s = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 ./% <cr>", "Shell" },
+  },
 
   p = {
     name = "Packer",

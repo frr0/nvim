@@ -60,6 +60,7 @@ Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 " Vimspector
 " ===============================================================
 Plug 'puremourning/vimspector'
+Plug 'voldikss/vim-floaterm'
 " ===============================================================
 
 
