@@ -12,8 +12,8 @@ nnoremap <space>O :so .session.vim <cr>
 
 " move
 
-nnoremap <Tab> gt
-nnoremap <S-Tab> gT
+nnoremap <Tab> :bn <cr>
+nnoremap <S-Tab> :bp <cr>
 
 nnoremap <space>v :bn <cr>
 nnoremap <space>b :tabe <cr>
