@@ -16,9 +16,9 @@ echo "I hope you're using Linux"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-cd ~
+#cd ~
 
-curl -sL install-node.vercel.app/lts | bash
+#curl -sL install-node.vercel.app/lts | bash
 
 cd ~
 
@@ -45,8 +45,8 @@ else
   git clone https://github.com/frr0/nvim.git
 fi
 
-cd ~/.vim/plugged/coc.nvim
-yarn install
+#cd ~/.vim/plugged/coc.nvim
+#yarn install
 
 cd ~
 

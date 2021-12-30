@@ -36,6 +36,7 @@ nnoremap <space>i :split <cr>
 
 nnoremap Y y$
 nnoremap yt 0y$
+vnoremap <C-y> "+y
 
 " man
 
