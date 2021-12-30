@@ -154,6 +154,11 @@ _G.packer_plugins = {
     path = "/home/fra/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  nerdcommenter = {
+    loaded = true,
+    path = "/home/fra/.local/share/nvim/site/pack/packer/start/nerdcommenter",
+    url = "https://github.com/preservim/nerdcommenter"
+  },
   ["nlsp-settings.nvim"] = {
     loaded = true,
     path = "/home/fra/.local/share/nvim/site/pack/packer/start/nlsp-settings.nvim",
@@ -238,6 +243,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fra/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-floaterm"] = {
+    loaded = true,
+    path = "/home/fra/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    url = "https://github.com/voldikss/vim-floaterm"
+  },
+  vimspector = {
+    loaded = true,
+    path = "/home/fra/.local/share/nvim/site/pack/packer/start/vimspector",
+    url = "https://github.com/puremourning/vimspector"
   },
   ["which-key.nvim"] = {
     loaded = true,

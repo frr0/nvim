@@ -2,11 +2,7 @@
 " Neovim "
 "========"
 
-call plug#begin(stdpath('data') . 'vimplug')
-  source ~/.config/nvim/vim/plug.vim
-  source ~/.config/nvim/vim/keymap.vim
-  source ~/.config/nvim/vim/vimspector.vim
-call plug#end()
+source ~/.config/nvim/vim/keymap.vim
 
 lua <<EOF
 require "user.options"
@@ -32,5 +28,3 @@ require "user.indentline"
 --require "user.comment"
 --require "user.keymaps"
 EOF
-
-colorscheme onedark
