@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/fra/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["YankRing.vim"] = {
+    loaded = true,
+    path = "/home/fra/.local/share/nvim/site/pack/packer/start/YankRing.vim",
+    url = "https://github.com/vim-scripts/YankRing.vim"
+  },
   ["alpha-nvim"] = {
     loaded = true,
     path = "/home/fra/.local/share/nvim/site/pack/packer/start/alpha-nvim",
@@ -133,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fra/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["galaxyline.nvim"] = {
+    loaded = true,
+    path = "/home/fra/.local/share/nvim/site/pack/packer/start/galaxyline.nvim",
+    url = "https://github.com/glepnir/galaxyline.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -248,6 +258,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fra/.local/share/nvim/site/pack/packer/start/vim-floaterm",
     url = "https://github.com/voldikss/vim-floaterm"
+  },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/home/fra/.local/share/nvim/site/pack/packer/start/vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
   },
   vimspector = {
     loaded = true,

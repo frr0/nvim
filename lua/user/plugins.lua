@@ -83,6 +83,9 @@ return packer.startup(function(use)
   use "voldikss/vim-floaterm"
   use "preservim/nerdcommenter"
   use "puremourning/vimspector"
+  use "mhinz/vim-startify"
+  use "glepnir/galaxyline.nvim"
+  use "vim-scripts/YankRing.vim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
