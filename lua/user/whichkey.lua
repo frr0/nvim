@@ -96,7 +96,7 @@ local mappings = {
     "<cmd>lua require('telescope.builtin').git_files(require('telescope.themes'))<cr>",
     "Git files",
   },
-  ["h"] = {"<cmd>Telescope find_file<cr>", "Files" },
+  ["h"] = {"<cmd>Telescope find_files<cr>", "Files" },
   ["k"] = {"<cmd>Telescope git_commits<cr>", "Commmits" },
   ["j"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
