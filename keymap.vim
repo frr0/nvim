@@ -13,8 +13,8 @@ nnoremap <space>O :so .session.vim <cr>
 
 " move
 
-nnoremap <Tab> :bnext <cr>
-nnoremap <S-Tab> :bprevious <cr>
+nnoremap <Tab> :w<cr> :bnext <cr>
+nnoremap <S-Tab> :w<cr> bprevious <cr>
 nnoremap <S-l> gt
 nnoremap <S-h> gT
 
