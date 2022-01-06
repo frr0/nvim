@@ -22,10 +22,10 @@ nnoremap <S-h> :bprevious <cr>
 nnoremap <space>v :bn <cr>
 nnoremap <space>b :tabe <cr>
 
-nnoremap <c-w>h <c-h>
-nnoremap <c-w>j <c-j>
-nnoremap <c-w>k <c-k>
-nnoremap <c-w>l <c-l>
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
 
 nnoremap \ 0
 vmap 1 0
