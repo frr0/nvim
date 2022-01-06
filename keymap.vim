@@ -6,6 +6,7 @@ let g:mapleader=","
 nnoremap <leader>z :wqa <cr>
 nnoremap <space>s :wa <cr>
 nnoremap <space>0 :q! <cr>
+nnoremap <space>9 :bdelete <cr>
 
 nnoremap <space>S :mksession! .session.vim <cr>
 nnoremap <space>O :so .session.vim <cr>
@@ -20,6 +21,11 @@ nnoremap <S-h> :bprevious <cr>
 
 nnoremap <space>v :bn <cr>
 nnoremap <space>b :tabe <cr>
+
+nnoremap <c-w>h <c-h>
+nnoremap <c-w>j <c-j>
+nnoremap <c-w>k <c-k>
+nnoremap <c-w>l <c-l>
 
 nnoremap \ 0
 vmap 1 0
@@ -39,7 +45,7 @@ nnoremap <space>i :split <cr>
 
 nnoremap Y y$
 nnoremap yt 0y$
-vnoremap <C-y> "+y
+vnoremap <C-c> "+y
 
 " man
 
