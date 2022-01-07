@@ -13,10 +13,10 @@ nnoremap <space>O :so .session.vim <cr>
 
 " move
 
-nnoremap <Tab> :w<cr> :bnext <cr>
-nnoremap <S-Tab> :w<cr> bprevious <cr>
-nnoremap <S-l> gt
-nnoremap <S-h> gT
+nnoremap <Tab> gt
+nnoremap <S-Tab> gT 
+nnoremap <S-l> :bnext <cr>
+nnoremap <S-h> :bprevious <cr>
 
 nnoremap <space>v :bn <cr>
 nnoremap <space>b :tabe <cr>
