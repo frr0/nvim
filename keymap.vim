@@ -15,8 +15,8 @@ nnoremap <space>O :so .session.vim <cr>
 
 nnoremap <Tab> gt
 nnoremap <S-Tab> gT 
-nnoremap <S-l> :bNext <cr>
-nnoremap <S-h> :bPrevious <cr>
+nnoremap <S-l> :bnext <cr>
+nnoremap <S-h> :bprevious <cr>
 
 nnoremap <space>v :bn <cr>
 nnoremap <space>b :tabe <cr>
