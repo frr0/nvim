@@ -87,6 +87,18 @@ return packer.startup(function(use)
   use "glepnir/galaxyline.nvim"
   use "vim-scripts/YankRing.vim"
 
+  -- Debuggers
+  use 'mfussenegger/nvim-dap'
+  use "Pocco81/DAPInstall.nvim"
+
+  local dap_install = require("dap-install")
+
+dap_install.setup({
+	installation_path = vim.fn.stdpath("data") .. "/dapinstall/",
+})
+
+
+
   -- Telescope
   use "nvim-telescope/telescope.nvim"
 
