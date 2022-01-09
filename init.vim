@@ -19,4 +19,5 @@ require "user.indentline"
 require "user.whichkey"
 require "user.autocommands"
 require "user.statusbar"
+require "user.keymaps"
 EOF

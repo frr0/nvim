@@ -87,9 +87,15 @@ return packer.startup(function(use)
   use "glepnir/galaxyline.nvim"
   use "vim-scripts/YankRing.vim"
 
+
+-- ===================================================================================================================================================
+
   -- Debuggers
   use 'mfussenegger/nvim-dap'
   use "Pocco81/DAPInstall.nvim"
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+  use 'nvim-telescope/telescope-dap.nvim'
+	use 'theHamsta/nvim-dap-virtual-text'
 
   local dap_install = require("dap-install")
 
@@ -97,7 +103,42 @@ dap_install.setup({
 	installation_path = vim.fn.stdpath("data") .. "/dapinstall/",
 })
 
+-- mfussenegger/nvim-dap
+local dap = require('dap')
+dap.adapters.node2 = {
+  type = 'executable',
+  command = 'node',
+  args = {os.getenv('HOME') .. '/apps/node/out/src/nodeDebug.js'},
+}
+local dap = require('dap')
+dap.configurations.python = {
+  {
+    type = 'python';
+    request = 'launch';
+    name = "Launch file";
+    program = "${file}";
+    pythonPath = function()
+      return '/usr/bin/python'
+    end;
+  },
+}
 
+
+-- require('dap').set_log_level('INFO')
+dap.defaults.fallback.terminal_win_cmd = '80vsplit new'
+vim.fn.sign_define('DapBreakpoint', {text='🟥', texthl='', linehl='', numhl=''})
+vim.fn.sign_define('DapBreakpointRejected', {text='🟦', texthl='', linehl='', numhl=''})
+vim.fn.sign_define('DapStopped', {text='⭐️', texthl='', linehl='', numhl=''})
+
+-- _G.shutDownDapSession = function()
+--   local dap = require'dap'
+--   dap.terminate()
+--   dap.disconnect( { terminateDebuggee = true })
+--   dap.close()
+-- end
+
+
+-- ===================================================================================================================================================
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
