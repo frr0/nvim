@@ -7,7 +7,7 @@ dap.adapters.cppdbg = {
   command = '.local/share/nvimvimplug/vimspector/gadgets/linux/download/vscode-cpptools/1.6.0/root/extension/debugAdapters/bin/OpenDebugAD7',
 }
 
-local dap = require('dap')
+--local dap = require('dap')
 dap.configurations.cpp = {
   {
     name = "Launch file",
@@ -82,14 +82,14 @@ dap.configurations.go = {
     mode = "test",
     program = "${file}"
   },
-  -- works with go.mod packages and sub packages 
+  -- works with go.mod packages and sub packages
   {
     type = "go",
     name = "Debug test (go.mod)",
     request = "launch",
     mode = "test",
     program = "./${relativeFileDirname}"
-  } 
+  }
 }
 
 require("nvim-dap-virtual-text").setup {
