@@ -35,6 +35,9 @@ vmap 0 $
 
 nnoremap <space>e :Vexplore
 
+" g
+nnoremap gc :%s/
+
 " makefile
 
 nnoremap <space>m :make <cr>
