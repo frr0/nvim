@@ -35,6 +35,8 @@ vmap 0 $
 
 nnoremap <space>e :Vexplore
 
+nnoremap <space><space> :Telescope lsp_document_symbols<cr>
+
 " g
 nnoremap gc :%s/
 
