@@ -47,6 +47,11 @@ nnoremap <space>m :make <cr>
 nnoremap <space>w :vsp <cr>
 nnoremap <space>i :split <cr>
 
+"dictionay
+
+set dictionary+=/usr/share/dict/linux.words
+set complete+=k
+
 " yank
 
 nnoremap Y y$
