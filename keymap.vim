@@ -52,6 +52,9 @@ nnoremap <space>i :split <cr>
 set dictionary+=/usr/share/dict/linux.words
 set complete+=k
 
+" zathura
+nnoremap <space>zz :!zathura %<.pdf &
+
 " yank
 
 nnoremap Y y$
