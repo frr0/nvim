@@ -53,7 +53,7 @@ set dictionary+=/usr/share/dict/linux.words
 set complete+=k
 
 " zathura
-nnoremap <space>zz :!zathura %<.pdf &
+nnoremap <space>zz :!zathura %<.pdf & <cr>
 
 " yank
 
