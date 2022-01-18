@@ -75,6 +75,8 @@ inoremap { {}<left>
 vnoremap < <gv
 vnoremap > >gv
 
+inoremap <M-i> ![image](support/){width=70%}<left><left><left><left><left><left><left><left><left><left><left><left>
+
 " tree
 
 nnoremap <space>e :NvimTreeToggle <cr>
