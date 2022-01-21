@@ -158,3 +158,5 @@ nmap <leader>drc <Plug>VimspectorRunToCursor
 " nmap <leader>dbp <Plug>VimspectorToggleBreakpoint
 nmap <F9> <Plug>VimspectorToggleBreakpoint
 nmap <leader>dcbp <Plug>VimspectorToggleConditionalBreakpoint
+
+let g:markdown_fenced_languages = ['html', 'python', 'ruby', 'vim', 'c', 'cpp', 'java', 'php', 'css']
