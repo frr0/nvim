@@ -63,6 +63,8 @@ return packer.startup(function(use)
   use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
   use "ap/vim-css-color"
+  --use "pacha/vem-tabline"
+  --use "mkitt/tabline.vim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
