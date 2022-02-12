@@ -107,7 +107,7 @@ local mappings = {
     j = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 wa | javac -g % && java %< <CR>", "Java"},
     p = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 wa | python3 % <cr>", "Python" },
     s = { "<cmd>FloatermNew --height=0.95 --width=0.95 --autoclose=0 wa | ./% <cr>", "Shell" },
-    m = { "<cmd> wa | !./md/note.sh %< <cr>", "md" },
+    m = { "<cmd> wa | !./note.sh %< <cr>", "md" },
   },
 
   p = {
