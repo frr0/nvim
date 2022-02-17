@@ -65,6 +65,7 @@ return packer.startup(function(use)
   use "ap/vim-css-color"
   --use "pacha/vem-tabline"
   --use "mkitt/tabline.vim"
+  --use "vim-airline/vim-airline"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
