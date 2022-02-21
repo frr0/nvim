@@ -95,6 +95,7 @@ return packer.startup(function(use)
 -- ===================================================================================================================================================
 
   -- Debuggers
+  use 'sakhnik/nvim-gdb'
   use 'mfussenegger/nvim-dap'
   use "Pocco81/DAPInstall.nvim"
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
