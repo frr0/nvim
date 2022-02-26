@@ -1,5 +1,6 @@
 let g:mapleader=","
 
+set spelllang=it,en
 
 " save and exit
 
