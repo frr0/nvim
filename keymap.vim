@@ -197,3 +197,5 @@ nnoremap <leader>dbt :lua require('dap').toggle_breakpoint()<CR>
 
 nnoremap <leader>dc :lua require('dap.ui.variables').scopes()<CR>
 nnoremap <leader>di :lua require("dapui").toggle()<CR>
+
+nnoremap <F3> :lua require("dapui").eval()<CR>

@@ -99,10 +99,6 @@ return packer.startup(function(use)
 	use 'theHamsta/nvim-dap-virtual-text'
   use { "rcarriga/vim-ultest", requires = {"vim-test/vim-test"}, run = ":UpdateRemotePlugins" }
 
-  vim.fn.sign_define('DapBreakpoint', {text='🟥', texthl='', linehl='', numhl=''})
-  vim.fn.sign_define('DapBreakpointRejected', {text='🟦', texthl='', linehl='', numhl=''})
-  vim.fn.sign_define('DapStopped', {text='⭐️', texthl='', linehl='', numhl=''})
-
   -- Telescope
   use "nvim-telescope/telescope.nvim"
 
