@@ -122,49 +122,78 @@ nnoremap <space>r :Telescope <cr>
 "tnoremap <leader>t <C-\><C-n>:call Term_toggl
 
 
-"Vimspector
-let g:vimspector_enable_mappings = 'HUMAN'
-" let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
+""Vimspector
+"let g:vimspector_enable_mappings = 'HUMAN'
+"" let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
 
-nnoremap <space>du :call vimspector#Launch()<CR>
-nnoremap <F5> :call vimspector#Launch()<CR>
-nnoremap <space>dx :VimspectorReset<CR>
-nnoremap <space>de :VimspectorEval
-nnoremap <space>dw :VimspectorWatch
-nnoremap <space>do :VimspectorShowOutput
-let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-go', 'CodeLLDB' ]
+"nnoremap <space>du :call vimspector#Launch()<CR>
+"nnoremap <F5> :call vimspector#Launch()<CR>
+"nnoremap <space>dx :VimspectorReset<CR>
+"nnoremap <space>de :VimspectorEval
+"nnoremap <space>dw :VimspectorWatch
+"nnoremap <space>do :VimspectorShowOutput
+"let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-go', 'CodeLLDB' ]
 
-" Debugger remaps
-nnoremap <space>. :MaximizerToggle!<CR>
-" nnoremap <leader>dd :call vimspector#Launch()<CR>
-nnoremap <leader>dc :call GotoWindow(g:vimspector_session_windows.code)<CR>
-nnoremap <leader>dt :call GotoWindow(g:vimspector_session_windows.tagpage)<CR>
-nnoremap <leader>dv :call GotoWindow(g:vimspector_session_windows.variables)<CR>
-nnoremap <leader>dw :call GotoWindow(g:vimspector_session_windows.watches)<CR>
-nnoremap <leader>ds :call GotoWindow(g:vimspector_session_windows.stack_trace)<CR>
-nnoremap <leader>do :call GotoWindow(g:vimspector_session_windows.output)<CR>
-nnoremap <leader>de :call vimspector#Reset()<CR>
+"" Debugger remaps
+"nnoremap <space>. :MaximizerToggle!<CR>
+"" nnoremap <leader>dd :call vimspector#Launch()<CR>
+"nnoremap <leader>dc :call GotoWindow(g:vimspector_session_windows.code)<CR>
+"nnoremap <leader>dt :call GotoWindow(g:vimspector_session_windows.tagpage)<CR>
+"nnoremap <leader>dv :call GotoWindow(g:vimspector_session_windows.variables)<CR>
+"nnoremap <leader>dw :call GotoWindow(g:vimspector_session_windows.watches)<CR>
+"nnoremap <leader>ds :call GotoWindow(g:vimspector_session_windows.stack_trace)<CR>
+"nnoremap <leader>do :call GotoWindow(g:vimspector_session_windows.output)<CR>
+"nnoremap <leader>de :call vimspector#Reset()<CR>
 
-nnoremap <leader>dtcb :call vimspector#CleanLineBreakpoint()<CR>
+"nnoremap <leader>dtcb :call vimspector#CleanLineBreakpoint()<CR>
 
-nmap <leader>dl <Plug>VimspectorStepInto
-nmap <F8> <Plug>VimspectorStepInto
-" nmap <leader>dj <Plug>VimspectorStepOver
-nmap <F10> <Plug>VimspectorStepOver
-" nmap <leader>dk <Plug>VimspectorStepOut
-nmap <F12> <Plug>VimspectorStepOut
-nmap <leader>d_ <Plug>VimspectorRestart
-nnoremap <leader>d<space> :call vimspector#Continue()<CR>
+"nmap <leader>dl <Plug>VimspectorStepInto
+"nmap <F8> <Plug>VimspectorStepInto
+"" nmap <leader>dj <Plug>VimspectorStepOver
+"nmap <F10> <Plug>VimspectorStepOver
+"" nmap <leader>dk <Plug>VimspectorStepOut
+"nmap <F12> <Plug>VimspectorStepOut
+"nmap <leader>d_ <Plug>VimspectorRestart
+"nnoremap <leader>d<space> :call vimspector#Continue()<CR>
 
-nmap <leader>drc <Plug>VimspectorRunToCursor
-" nmap <leader>dbp <Plug>VimspectorToggleBreakpoint
-nmap <F9> <Plug>VimspectorToggleBreakpoint
-nmap <leader>dcbp <Plug>VimspectorToggleConditionalBreakpoint
+"nmap <leader>drc <Plug>VimspectorRunToCursor
+"" nmap <leader>dbp <Plug>VimspectorToggleBreakpoint
+"nmap <F9> <Plug>VimspectorToggleBreakpoint
+"nmap <leader>dcbp <Plug>VimspectorToggleConditionalBreakpoint
 
 let g:markdown_fenced_languages = ['html', 'python', 'ruby', 'vim', 'c', 'cpp', 'java', 'php', 'css']
 
-hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
-hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
-hi TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
+"hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
+"hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
+"hi TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
 
-let g:airline#extensions#tabline#formatter = 'unique_tail'
+"let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+nnoremap <F7> :lua require('dapui').toggle()<CR>
+nnoremap <F9> :lua require('dap').toggle_breakpoint()<CR>
+nnoremap <F5> :lua require('dap').continue()<CR>
+
+nnoremap <F6> :lua require('dap').step_over()<CR>
+nnoremap <F10> :lua require('dap').step_into()<CR>
+nnoremap <F8> :lua require('dap').step_out()<CR>
+
+nnoremap <leader>dsc :lua require('dap').continue()<CR>
+nnoremap <leader>dsv :lua require('dap').step_over()<CR>
+nnoremap <leader>dsi :lua require('dap').step_into()<CR>
+nnoremap <leader>dso :lua require('dap').step_out()<CR>
+
+nnoremap <leader>dhh :lua require('dap.ui.variables').hover()<CR>
+nnoremap <leader>dhv :lua require('dap.ui.variables').visual_hover()<CR>
+
+nnoremap <leader>duh :lua require('dap.ui.widgets').hover()<CR>
+nnoremap <leader>duf :lua local widgets=require('dap.ui.widgets');widgets.centered_float(widgets.scopes)<CR>
+
+nnoremap <leader>dro :lua require('dap').repl.open()<CR>
+nnoremap <leader>drl :lua require('dap').repl.run_last()<CR>
+
+nnoremap <leader>dbc :lua require('dap').set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>
+nnoremap <leader>dbm :lua require('dap').set_breakpoint({ nil, nil, vim.fn.input('Log point message: ') })<CR>
+nnoremap <leader>dbt :lua require('dap').toggle_breakpoint()<CR>
+
+nnoremap <leader>dc :lua require('dap.ui.variables').scopes()<CR>
+nnoremap <leader>di :lua require("dapui").toggle()<CR>

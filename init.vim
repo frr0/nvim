@@ -22,5 +22,5 @@ require "user.indentline"
 require "user.whichkey"
 require "user.autocommands"
 require "user.statusbar"
-require('dap.ext.vscode').load_launchjs()
+--require('dap.ext.vscode').load_launchjs()
 EOF
