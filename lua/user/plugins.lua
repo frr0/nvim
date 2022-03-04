@@ -98,6 +98,7 @@ return packer.startup(function(use)
   use 'nvim-telescope/telescope-dap.nvim'
 	use 'theHamsta/nvim-dap-virtual-text'
   use { "rcarriga/vim-ultest", requires = {"vim-test/vim-test"}, run = ":UpdateRemotePlugins" }
+  use 'jbyuki/one-small-step-for-vimkind'
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"

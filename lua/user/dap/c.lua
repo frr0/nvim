@@ -7,8 +7,9 @@ end
 
 dap.adapters.cppdbg = {
   type = 'executable',
-  command = '~/.local/share/nvim/dapinstall/ccppr_vsc/cpptools-linux/extension/bin/OpenDebugAD7',
+  command = os.getenv('HOME') .. '/.local/share/nvim/dapinstall/ccppr_vsc/cpptools-linux/extension/bin/OpenDebugAD7',
 }
+
 
 --dap.configurations.cpp = {
   --{

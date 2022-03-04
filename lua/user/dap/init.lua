@@ -1,4 +1,6 @@
-require "user.dap.dap"
+require "user.dap.dap_s"
+require "user.dap.dapInstall"
+require "user.dap.ultest"
 require "user.dap.dap-ui"
 require "user.dap.dap-virtual"
 require "user.dap.c"
