@@ -13,7 +13,7 @@ set relativenumber
 set mouse=a
 set ignorecase
 set hidden
-set spelllang=en_us
+set spelllang=en,it
 
 set expandtab
 set tabstop=2
