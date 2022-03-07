@@ -70,7 +70,7 @@ nnoremap gm :Man <cr>
 
 nnoremap <space>ga :Git stage %<CR>
 nnoremap <space>gk :Git commit <CR>
-nnoremap <space>go :Git push origin
+nnoremap <space>gp :Git push origin
 
 
 " brackets

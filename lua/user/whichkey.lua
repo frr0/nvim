@@ -147,7 +147,7 @@ local mappings = {
     a = { "<cmd>Git stage %<CR>", "Stage" },
     c = { "<cmd>Git commit <CR>", "Commit" },
     s = { "<cmd>Git status <CR>", "Status" },
-    p = { "<cmd>Git push origin ", "Push" },
+    --p = { "<cmd>Git push origin ", "Push" },
     d = {
       "<cmd>Gitsigns diffthis HEAD<cr>",
       "Diff",
