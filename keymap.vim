@@ -66,6 +66,13 @@ vnoremap <C-c> "+y
 
 nnoremap gm :Man <cr>
 
+"git
+
+nnoremap <space>ga :Git stage %<CR>
+nnoremap <space>gk :Git commit <CR>
+nnoremap <space>go :Git push origin
+
+
 " brackets
 
 inoremap " ""<left>
