@@ -30,7 +30,7 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
 nnoremap \ 0
-vmap 1 0
+vmap \ 0
 nnoremap 0 $
 vmap 0 $
 

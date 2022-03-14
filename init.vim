@@ -1,6 +1,7 @@
 source ~/.config/nvim/keymap.vim
 
 lua <<EOF
+require "user.alpha"
 require "user.options"
 --require "user.keymaps"
 require "user.plugins"
@@ -16,11 +17,10 @@ require "user.nvim-tree"
 require "user.lualine"
 require "user.bufferline"
 require "user.toggleterm"
---require "user.project"
+require "user.project"
 require "user.impatient"
 require "user.indentline"
 require "user.whichkey"
 require "user.autocommands"
 require "user.statusbar"
---require('dap.ext.vscode').load_launchjs()
 EOF
