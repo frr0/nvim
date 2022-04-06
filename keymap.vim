@@ -22,7 +22,7 @@ nnoremap <S-h> :bprevious <cr>
 nnoremap <space>v :bn <cr>
 nnoremap <space>b :tabe <cr>
 
-nnoremap <space>n gg=G
+nnoremap <space>n G=ggg;
 
 nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
@@ -33,6 +33,9 @@ nnoremap \ 0
 vmap \ 0
 nnoremap 0 $
 vmap 0 $
+
+nnoremap + {
+nnoremap - }
 
 nnoremap <space>e :Vexplore
 
@@ -58,7 +61,7 @@ nnoremap <space>zz :!zathura %<.pdf & <cr>
 
 " yank
 
-nnoremap Y y$
+nnoremap yu y$
 nnoremap yt 0y$
 vnoremap <C-c> "+y
 
