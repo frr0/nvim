@@ -1,9 +1,6 @@
-source ~/.config/nvim/keymap.vim
-
-lua <<EOF
 require "user.alpha"
 require "user.options"
---require "user.keymaps"
+require "user.keymaps"
 require "user.plugins"
 require "user.colorscheme"
 require "user.cmp"
@@ -23,4 +20,3 @@ require "user.indentline"
 require "user.whichkey"
 require "user.autocommands"
 require "user.statusbar"
-EOF

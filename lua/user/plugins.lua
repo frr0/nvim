@@ -60,7 +60,7 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "tpope/vim-fugitive"
   use "vim-scripts/mips.vim"
-
+  use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'}
   -- Colorschemes
   use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
@@ -92,6 +92,7 @@ return packer.startup(function(use)
   use "mhinz/vim-startify"
   use "glepnir/galaxyline.nvim"
   use "vim-scripts/YankRing.vim"
+  use 'simrat39/rust-tools.nvim'
 
   -- Debuggers
   use 'mfussenegger/nvim-dap'
