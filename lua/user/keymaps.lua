@@ -17,10 +17,10 @@ nnoremap <space>O :so .session.vim <cr>
 
 " move
 
-nnoremap <Tab> gt
-nnoremap <S-Tab> gT 
-nnoremap <S-l> :bnext <cr>
-nnoremap <S-h> :bprevious <cr>
+nnoremap <S-l> gt
+nnoremap <S-h> gT 
+nnoremap <tab> :bnext <cr>
+nnoremap <S-tab> :bprevious <cr>
 
 nnoremap <space>v :bn <cr>
 nnoremap <space>b :tabe <cr>
