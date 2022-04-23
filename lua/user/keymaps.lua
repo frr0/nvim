@@ -9,8 +9,8 @@ set tw=80
 
 nnoremap <leader>z :wqa <cr>
 nnoremap <space>s :wa <cr>
-nnoremap <space>0 :q! <cr>
-nnoremap <space>9 :bdelete <cr>
+nnoremap <space>0 :bdelete <cr>
+nnoremap <space>9 :q! <cr>
 
 nnoremap <space>S :mksession! .session.vim <cr>
 nnoremap <space>O :so .session.vim <cr>
@@ -212,6 +212,10 @@ nnoremap <leader>dc :lua require('dap.ui.variables').scopes()<CR>
 nnoremap <leader>di :lua require("dapui").toggle()<CR>
 
 nnoremap <F3> :lua require("dapui").eval()<CR>
+
+nmap <space>5 <Plug>SnipRun
+nmap <space>6 <Plug>SnipRunOperator
+vmap f <Plug>SnipRun
 
 
 ]])

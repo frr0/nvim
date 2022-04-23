@@ -100,6 +100,8 @@ local mappings = {
   ["k"] = {"<cmd>Telescope git_commits<cr>", "Commmits" },
   ["j"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
+  ["y"] = { "<cmd>tabe<cr>", "New tab" },
+  ["+"] = { "<cmd>enew<cr>", "New buffer" },
   ["<F3>"] = {"<cmd>lua require('dapui').eval()<CR>", "Scopes" },
   ["<F7>"] = {"<cmd>lua require('dapui').toggle()<CR>", "Debug UI" },
   ["<F5>"] = {"<cmd>lua require('dap').continue()<CR>", "Continue" },

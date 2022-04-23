@@ -18,8 +18,8 @@ end
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
 vim.cmd [[
   augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+  autocmd!
+  autocmd BufWritePost plugins.lua source <afile> | PackerSync
   augroup end
 ]]
 
@@ -97,11 +97,15 @@ return packer.startup(function(use)
   -- Debuggers
   use 'mfussenegger/nvim-dap'
   use "Pocco81/DAPInstall.nvim"
+  use "Pocco81/dap-buddy.nvim"
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
   use 'nvim-telescope/telescope-dap.nvim'
-	use 'theHamsta/nvim-dap-virtual-text'
+  use 'theHamsta/nvim-dap-virtual-text'
   use { "rcarriga/vim-ultest", requires = {"vim-test/vim-test"}, run = ":UpdateRemotePlugins" }
   use 'jbyuki/one-small-step-for-vimkind'
+  use { 'michaelb/sniprun', run = 'bash ./install.sh'}
+  use "epheien/termdbg"
+  use "huawenyu/termdebug.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
